@@ -20,65 +20,19 @@
     </ul>
 </nav>
 
-<!-- container pentru afisarea array-ului de laptopuri -->
-<section id="containerLaptopuri" class="laptop-container"></section>
-
-<script>
-/* adds the laptop cards to display the picture of the laptops and specs in the left bar*/
-    fetch('./data.json')
-    .then(response => response.json())
-    .then(data => {
-        const container = document.getElementById('containerLaptopuri');
-
-        container.style.paddingTop = getElementHeight("#navigationBar") + "px";
-        
-        // Clear existing content
-        container.innerHTML = '';
-
-        data.forEach(laptop => {
-            const laptopDiv = document.createElement('div');
-            laptopDiv.classList.add('leftSideLaptop');
-
-            laptopDiv.innerHTML = `
-                <a href="${laptop.href}" target="_blank">
-                    <img src="${laptop.src}" alt="${laptop.numeLaptop}">
-                    <h3>${laptop.numeLaptop}</h3>
-                </a>
-                <ul>
-                    <li><strong>CPU:</strong> ${laptop.specificatii.cpu}</li>
-                    <li><strong>GPU:</strong> ${laptop.specificatii.gpu}</li>
-                    <li><strong>RAM:</strong> ${laptop.specificatii.ramCapacity}</li>
-                    <li><strong>Storage:</strong> ${laptop.specificatii.romCapacity} ${laptop.specificatii.storageType}</li>
-                    <li><strong>Display:</strong> ${laptop.specificatii.display}</li>
-                    <li><strong>OS:</strong> ${laptop.specificatii.OS}</li>
-                </ul>
-            `;
-
-            container.appendChild(laptopDiv);
-        });
-    })
-    .catch(error => {
-        console.error('Failed to load JSON:', error);
-    });
+<section id="leftAndMain">
+    <!-- container pentru afisarea array-ului de laptopuri -->
+    <section id="containerLaptopuri" class="laptop-container"></section>
 
 
-    // function to calculate the height of a HTML element
-    function getElementHeight(selector) {
-    const element = document.querySelector(selector);
-    if (!element) {
-        console.warn('Element not found');
-        return null;
-        }
+    <section class="laptopPage">
+        <div class="laptopSpecs">
 
-    const height = element.offsetHeight; // Includes padding + border (but not margin)
-    console.log(`Height of ${selector}: ${height}px`);
-    return height;
-    }
+        </div>
+    </section>
+</section>
 
-
-
-</script>
-
+<script src="script.js"></script>
 
 </body>
 </html>

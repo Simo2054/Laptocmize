@@ -13,7 +13,6 @@ box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-
 }
 
 .navBar li img {
@@ -39,20 +38,25 @@ nav {
 
 /* end of navigation bar */
 
+#leftAndMain {
+    width: 70%;
+    display: flex;
+}
+
 /* ------------ afisarea laptopurilor ------------ */
 
-
-
+#containerLaptopuri {
+    width: 30%;
+}
 
 /* Individual laptop card */
 .leftSideLaptop {
-    
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
+
     padding: 16px;
     box-sizing: border-box;
     display: flex;
@@ -70,7 +74,7 @@ nav {
 }
 
 /* Laptop name */
-.leftSideLaptop h3 {
+.leftSideLaptop a {
     font-size: 1.2rem;
     color: #333;
     margin: 10px 0;
@@ -94,6 +98,39 @@ nav {
     color: #444;
 }
 
+/* individual laptop page */
 
+.laptopPage {
+    width: 70%;
+    display: flex;
+}
+
+.laptopSpecs {
+    width: 100%;
+}
+
+.laptopSpecs ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin-left: 5px;
+    margin-top: 1px;
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    
+}
+
+.laptopSpecs li {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.laptopSpecs li strong {
+    display: inline-block;
+    color: #333;
+}
 
 

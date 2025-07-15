@@ -1,0 +1,185 @@
+[
+  {
+    "numeLaptop": "Apple MacBook Pro 14\" (M4)",
+    "href": "/laptop-apple-macbook-pro-14-2024-cu-procesor-apple-m4-10-nuclee-cpu-10-nuclee-gpu-16gb-512gb-ssd", 
+    "src": "laptop_icons/macbook-pro-14-m4.png",
+    "specificatii": {
+      "cpu": "Apple M4 (10‑core)",
+      "gpu": "Apple GPU (10‑core)",
+      "romCapacity": "512GB",
+      "ramCapacity": "16GB",
+      "display": "14\" Liquid Retina XDR",
+      "storageType": "SSD",
+      "OS": "macOS"
+    }
+  },
+  {
+    "numeLaptop": "Lenovo IdeaPad Slim 5 14IRH10",
+    "href": "/laptop-lenovo-ideapad-slim-5-14irh10-i5-13420h-32gb-1tb", 
+    "src": "laptop_icons/lenovo-ideapad-slim-5-14.png",
+    "specificatii": {
+      "cpu": "Intel Core i5‑13420H",
+      "gpu": "Intel UHD Graphics",
+      "romCapacity": "1TB",
+      "ramCapacity": "32GB",
+      "display": "14\" WUXGA IPS",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  },
+  {
+    "numeLaptop": "ASUS TUF A14 FA401WV",
+    "href": "/laptop-asus-tuf-a14-fa401wv-ryzen-9-hx-370-32gb-1tb", 
+    "src": "laptop_icons/asus-tuf-a14.png",
+    "specificatii": {
+      "cpu": "AMD Ryzen 9 HX 370",
+      "gpu": "NVIDIA GeForce RTX 4060",
+      "romCapacity": "1TB",
+      "ramCapacity": "32GB",
+      "display": "14\" 2.5K IPS 165Hz",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  },
+  {
+    "numeLaptop": "HP ProBook 440 G11",
+    "href": "/laptop-hp-probook-440-g11-i5-125u-16gb-512gb", 
+    "src": "laptop_icons/hp-probook-440-g11.png",
+    "specificatii": {
+      "cpu": "Intel Core Ultra 5 125U",
+      "gpu": "Intel Graphics",
+      "romCapacity": "512GB",
+      "ramCapacity": "16GB",
+      "display": "14\" WUXGA IPS",
+      "storageType": "SSD",
+      "OS": "Windows 11 Pro"
+    }
+  },
+  {
+    "numeLaptop": "Lenovo LOQ 15 IAX9",
+    "href": "/laptop-gaming-lenovo-loq-15iax9-i5-12600hx-24gb-512gb", 
+    "src": "laptop_icons/lenovo-loq-15.png",
+    "specificatii": {
+      "cpu": "Intel Core i5‑12600HX",
+      "gpu": "NVIDIA GeForce RTX 3050",
+      "romCapacity": "512GB",
+      "ramCapacity": "24GB",
+      "display": "15.6\" FHD 144Hz",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  },
+  {
+    "numeLaptop": "Acer Aspire 5 A515‑57",
+    "href": "/laptop-acer-aspire-5-a515-57-i7-12650h-16gb-1tb", 
+    "src": "laptop_icons/acer-aspire-5-15.png",
+    "specificatii": {
+      "cpu": "Intel Core i7‑12650H",
+      "gpu": "Intel UHD Graphics",
+      "romCapacity": "1TB",
+      "ramCapacity": "16GB",
+      "display": "15.6\" FHD IPS",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  },
+  {
+    "numeLaptop": "MSI Cyborg 15 A13VF",
+    "href": "/laptop-msi-cyborg-15-a13vf-i7-13620h-16gb-1tb", 
+    "src": "laptop_icons/msi-cyborg-15.png",
+    "specificatii": {
+      "cpu": "Intel Core i7‑13620H",
+      "gpu": "NVIDIA GeForce RTX 4060",
+      "romCapacity": "1TB",
+      "ramCapacity": "16GB",
+      "display": "15.6\" FHD IPS 144Hz",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  },
+  {
+    "numeLaptop": "Dell Vostro 3530",
+    "href": "/laptop-dell-vostro-3530-i5-1334u-16gb-512gb", 
+    "src": "laptop_icons/dell-vostro-3530.png",
+    "specificatii": {
+      "cpu": "Intel Core i5‑1334U",
+      "gpu": "Intel Iris Xe",
+      "romCapacity": "512GB",
+      "ramCapacity": "16GB",
+      "display": "15.6\" FHD IPS 120Hz",
+      "storageType": "SSD",
+      "OS": "Windows 11 Pro"
+    }
+  },
+  {
+    "numeLaptop": "Apple MacBook Pro 16\" (M4 Pro)",
+    "href": "/laptop-apple-macbook-pro-16-cu-m4-pro-14-core-48gb-512gb", 
+    "src": "laptop_icons/macbook-pro-16-m4pro.png",
+    "specificatii": {
+      "cpu": "Apple M4 Pro (14‑core)",
+      "gpu": "Apple GPU",
+      "romCapacity": "512GB",
+      "ramCapacity": "48GB",
+      "display": "16\" Liquid Retina XDR",
+      "storageType": "SSD",
+      "OS": "macOS"
+    }
+  },
+  {
+    "numeLaptop": "Lenovo LOQ 15 IRX10",
+    "href": "/laptop-lenovo-loq-15-irx10-i7-13650hx-24gb-1tb", 
+    "src": "laptop_icons/lenovo-loq-15-irx10.png",
+    "specificatii": {
+      "cpu": "Intel Core i7‑13650HX",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "romCapacity": "1TB",
+      "ramCapacity": "24GB",
+      "display": "15.6\" FHD IPS 144Hz",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  },
+  {
+    "numeLaptop": "HP Victus 15",
+    "href": "/laptop-hp-victus-15-fb1107nq-ryzen-5-7535hs-16gb-1tb", 
+    "src": "laptop_icons/hp-victus-15.png",
+    "specificatii": {
+      "cpu": "AMD Ryzen 5 7535HS",
+      "gpu": "NVIDIA GeForce RTX 2050",
+      "romCapacity": "1TB",
+      "ramCapacity": "16GB",
+      "display": "15.6\" FHD IPS 144Hz",
+      "storageType": "SSD",
+      "OS": "Free DOS"
+    }
+  },
+  {
+    "numeLaptop": "Acer Nitro V 15 (ANV15‑51)",
+    "href": "/laptop-acer-nitro-v-15-anv15‑51-i5-13420h-16gb-512gb", 
+    "src": "laptop_icons/acer-nitro-v-15.png",
+    "specificatii": {
+      "cpu": "Intel Core i5‑13420H",
+      "gpu": "NVIDIA GeForce RTX 3050",
+      "romCapacity": "512GB",
+      "ramCapacity": "16GB",
+      "display": "15.6\" FHD IPS 144Hz",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  },
+  {
+    "numeLaptop": "Lenovo IdeaPad Slim 3 15ABR8",
+    "href": "laptop-lenovo-ideapad-slim-3-15abr8-ryzen-7-5825u-16gb-512gb", 
+    "src": "laptop_icons/lenovo-ideapad-slim-3-15.png",
+    "specificatii": {
+      "cpu": "AMD Ryzen 7 5825U",
+      "gpu": "AMD Radeon Graphics",
+      "romCapacity": "512GB",
+      "ramCapacity": "16GB",
+      "display": "15.6\" FHD IPS",
+      "storageType": "SSD",
+      "OS": "No OS"
+    }
+  }
+
+]

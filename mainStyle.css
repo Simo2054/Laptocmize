@@ -1,0 +1,99 @@
+/* Global */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* navigation bar */
+.navBar {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.navBar li img {
+    display: inline-block;
+    height: 70px;
+}
+
+nav {
+    padding-top: 5px;
+    position: fixed;
+    background-color: #D0F0FD;
+    width: 100%;
+    border: 2px solid #1595EF;
+    border-radius: 0 0 12px 12px; 
+    box-shadow: 0 4px 12px rgba(21, 149, 239, 0.1);
+}
+
+.navBar a {
+    margin: 0 50px 0 50px;
+    text-decoration: none;
+}
+
+
+/* end of navigation bar */
+
+/* ------------ afisarea laptopurilor ------------ */
+
+
+
+
+/* Individual laptop card */
+.leftSideLaptop {
+    
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image styling */
+.leftSideLaptop img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Laptop name */
+.leftSideLaptop h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Specifications list */
+.leftSideLaptop ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.leftSideLaptop li {
+    font-size: 0.95rem;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.leftSideLaptop li strong {
+    color: #444;
+}
+
+
+
+

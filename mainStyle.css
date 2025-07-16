@@ -101,8 +101,11 @@ nav {
 /* individual laptop page */
 
 .laptopPage {
-    width: 70%;
+    width: 49%; /*70% of 70% of the viewport
+                where 70% is of the container
+                and 70% is the specs page itself */
     display: flex;
+    position: fixed;
 }
 
 .laptopSpecs {

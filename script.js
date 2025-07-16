@@ -1,5 +1,6 @@
+const topLeftAndMainPadding = 10;
 /* adds the laptop cards to display the picture of the laptops and specs in the left bar*/
-    fetch('./data.json')
+    fetch('/site_laptopuri/data-ar.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('containerLaptopuri');
@@ -50,17 +51,33 @@
         return null;
         }
 
-    const height = element.offsetHeight; // Includes padding + border (but not margin)
+    const height = element.offsetHeight + topLeftAndMainPadding; // Includes padding + border (but not margin)
     return height;
     }
+
+    function getElementWidth(selector) {
+        const element = document.querySelector(selector);
+        if (!element) {
+            console.warn('Element not found');
+            return null;
+            }
+        
+        const width = element.offsetWidth;
+        console.log("width of that: " + width);
+        return width;
+    } 
 
     // adding padding to the top of the container
     const leftAndMainContainer = document.querySelector("#leftAndMain");
     leftAndMainContainer.style.paddingTop = getElementHeight("#navigationBar") + "px";
 
+    const specsPage = document.querySelector("#laptopSpecsPage");
+    specsPage.style.left = getElementWidth("#containerLaptopuri") + "px";
+
 /* function to render the laptop specs in the individual laptop page */
+
 function displayLaptopSpecs(href) {
-    fetch('./data.json')
+    fetch('/site_laptopuri/data-ar.json')
     .then(response => response.json())
     .then(data => {
         const laptop = data.find(item => item.href === href);

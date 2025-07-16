@@ -1,24 +1,31 @@
 const topLeftAndMainPadding = 10;
-/* adds the laptop cards to display the picture of the laptops and specs in the left bar*/
-    fetch('/site_laptopuri/data-ar.json')
-    .then(response => response.json())
+
+// Fetches laptop data from a local JSON file and dynamically generates HTML cards
+// to display each laptop's image, name, and specifications in the left sidebar.
+    fetch('/site_laptopuri/data-ar.json') // fetch the JSON file that contains information about laptops
+    .then(response => response.json()) // parse the response as JSON
     .then(data => {
+        // get the parent container element where laptop cards will be displayed
         const container = document.getElementById('containerLaptopuri');
 
-        // Clear existing content
+        // Clear existing content inside the container
         container.innerHTML = '';
 
+        // iterate over each laptop entry in the JSON file
         data.forEach(laptop => {
+            // create a div element for the laptop card
             const laptopDiv = document.createElement('div');
-            laptopDiv.classList.add('leftSideLaptop');
+            laptopDiv.classList.add('leftSideLaptop'); // add a class to the div for CSS styling
 
+            // populate the inner HTML of the laptop card with relevant information:
+            // photo, name, a few specs
             laptopDiv.innerHTML = `
-                <a href="${laptop.href}" target="_blank">
-                    <img src="${laptop.src}" alt="${laptop.numeLaptop}">
-                    ${laptop.numeLaptop}
+                <a href="${laptop.href}" target="_blank"> <!-- Link to the detailed laptop page -->
+                    <img src="${laptop.src}" alt="${laptop.numeLaptop}"> <!-- Laptop image -->
+                    ${laptop.numeLaptop} <!-- Laptop's name -->
                 </a>
                 
-                
+                <!-- Laptop specs (unordered) list -->
                 <ul>
                     <li><strong>CPU:</strong> ${laptop.specificatii.cpu}</li>
                     <li><strong>GPU:</strong> ${laptop.specificatii.gpu}</li>
@@ -84,8 +91,20 @@ function displayLaptopSpecs(href) {
         if (!laptop) return;
 
         const laptopSpecsDiv = document.getElementsByClassName("laptopSpecs")[0];
-        
 
+            console.log("laptop:" + laptop);
+            
+            const specs = laptop.specificatii;
+
+            const ceva = "<"
+            for (const key in specs)
+            {
+                const value = specs[key];
+                {
+                    console.log("spefificatie: " + key);
+                }
+            }
+    
             laptopSpecsDiv.innerHTML = `
                 <ul>
                     <li><strong>Nume Laptop:</strong> ${laptop.numeLaptop}</li>

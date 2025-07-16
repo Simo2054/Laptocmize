@@ -31,7 +31,10 @@
             container.appendChild(laptopDiv);
 
             const element = laptopDiv.querySelector("a");
-            element.addEventListener("click", () => appendToURL(laptop.href));
+            element.addEventListener("click", (e) => {
+                e.preventDefault();
+                appendToMain(laptop.href);
+            });
         });
     })
     .catch(error => {
@@ -56,12 +59,15 @@
     leftAndMainContainer.style.paddingTop = getElementHeight("#navigationBar") + "px";
 
 /* function to render the laptop specs in the individual laptop page */
+function displayLaptopSpecs(href) {
     fetch('./data.json')
     .then(response => response.json())
     .then(data => {
-        const container = document.getElementsByClassName("laptopPage")[0];
+        const laptop = data.find(item => item.href === href);
+        if (!laptop) return;
+
         const laptopSpecsDiv = document.getElementsByClassName("laptopSpecs")[0];
-        data.forEach(laptop => {
+        
 
             laptopSpecsDiv.innerHTML = `
                 <ul>
@@ -74,20 +80,27 @@
                     <li><strong>OS:</strong> ${laptop.specificatii.OS}</li>
                 </ul>
             `;
-        });
+
     })
     .catch(error => {
         console.error('Failed to load JSON:', error);
     });
+}
 
 /* function to append to the current url */
 
-    function appendToURL(suffix) {
-        const currentURL = window.location.href;
-        const newURL = currentURL + suffix;
+    function appendToMain(suffix) {
+        displayLaptopSpecs(suffix);
+
+        const baseURL = "http://127.0.0.1:5500/site_laptopuri/demo.html";
+        const newURL = baseURL + suffix;
+
+        console.log("base URL: " + baseURL);
+        console.log("new url: " + newURL);
 
         history.pushState(null, '', newURL);
     }
+
 
 /* upon clicking on a laptop card, change the url */
 
